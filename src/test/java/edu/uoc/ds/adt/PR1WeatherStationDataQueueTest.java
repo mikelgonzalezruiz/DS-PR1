@@ -39,9 +39,6 @@ public class PR1WeatherStationDataQueueTest {
                     Double.parseDouble(record.get("minAirTemperature")),
                     Double.parseDouble(record.get("maxAirTemperature"))
             );
-
-            System.out.println(weatherData.getAvgAirTemperature());
-
             pr1q.add(weatherData);
         }
     }

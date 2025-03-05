@@ -15,6 +15,13 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/DSLib-2.1-6.jar</systemPath>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.10.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
