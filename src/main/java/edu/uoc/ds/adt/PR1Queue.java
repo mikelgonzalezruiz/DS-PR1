@@ -1,31 +1,32 @@
 package edu.uoc.ds.adt;
 
-
 import edu.uoc.ds.adt.sequential.Queue;
 import edu.uoc.ds.adt.sequential.QueueArrayImpl;
 
 public class PR1Queue {
 
-    public final int CAPACITY = 10;
+    public static final int CAPACITY = 15;
 
-    private Queue<Character> queue;
+    private Queue<Integer> queue;
 
     public PR1Queue() {
         newQueue();
     }
+
     public void newQueue() {
         queue = new QueueArrayImpl<>(CAPACITY);
     }
 
-    public Queue<Character> getQueue() {
+    public Queue<Integer> getQueue() {
         return this.queue;
     }
 
-    public void add(Character c) {
-        this.queue.add(c);
+    public void add(int value) {
+        this.queue.add(value);
     }
 
-    public Character poll() {
+    public int poll() {
         return this.queue.poll();
     }
+
 }
